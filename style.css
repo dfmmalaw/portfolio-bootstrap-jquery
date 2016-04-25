@@ -11,7 +11,7 @@
 }
 
 
-p {
+#slogan {
     color:green;
     text-align:center;
     border: 3px solid red;
@@ -26,7 +26,7 @@ h1 {
      text-shadow: 5px 2px 5px #cccccc;
 }
 
-img {
+.deanash {
     display: block;
     margin: 0 auto;
     /*this add rounded corners to the image*/
@@ -35,7 +35,7 @@ img {
     box-shadow: 5px 15px 6px -7px #121212;
 }
 
-.position-test {
+.footer {
    position: fixed;
    bottom: 0;
    right: 0;
@@ -59,3 +59,4 @@ a:visited:hover,
 a:visited:focus {
     color: #0088FF;
   }
+

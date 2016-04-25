@@ -7,8 +7,14 @@
         century England. Specialist in CSS, HTML, and romantic poetry.”>
         <meta name="author" content="Dean Friedland">
         <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
     <body>
+        
         <nav>
             <div id="logo">
                 <img src="img/kimura.png"></img>
@@ -23,16 +29,50 @@
         
         <div>
             <h1>Dean Friedland</h1>
-            <img src="img/deanash.jpg"></img>   
-            <p>Welcome to my world...</p>
-        </div>
-        
-        <div class="position-test">
-            <p>Here is text.</p>
+            <img class="deanash" src="img/deanash.jpg"></img>   
+            <p id="slogan">Welcome to my world...</p>
         </div>
 
-        <div class="position-buddy">
-           <p>I’m the other element’s buddy</p>
+        <div class="footer">
+           <p>Kimura Koding 2016</p>
         </div>
+        
+        <div>
+            <!--this is the first part of an "about me" paragraph-->
+            <p class="about1">
+            Hi! My name is Dean Friedland and I am a developer. I have an incredible 
+            wife (Ashley), daughter (Reese), and son (Ryder), and there is nothing 
+            better than being a husband and father. I love all things martial arts 
+            and will train and compete in Brazilian Jiu Jitsu until the day I die! 
+            I also love to surf and have saltwater in my veins. I live in Kennesaw, 
+            Georgia and the closest beach is hours away, which I hate :)
+            </p>
+            
+            <a id="read-more" href="#">Read More</a>
+    
+            <p class="about2">
+            I am originally from South Africa but have lived in the US since I was 
+            a kid, after a six year stint in Canada. I have also lived in both Ecuador 
+            and Costa Rica (both of which have killer waves) and am blessed to have 
+            traveled to many other countries in this amazing world. I hope you enjoy 
+            my site and thank you for visiting!
+            </p>
+        </div>
+        
+        <!--since there is no src attribute in the script tag it is called an inline script and that is what the below jquery is-->
+        <script>
+            /*hide all the content of the body*/
+            $('body').hide(); 
+            /*fade-in the content of the body over 2000 milliseconds (2 seconds)*/
+            $('body').fadeIn(2000); 
+            
+            // this will hide the second "about me" paragraph
+            $('.about2').hide(); 
+            // this wil make it reappear
+            $('#read-more').on('click', function() {
+                $(this).hide();
+                $('.about2').show();
+            });
+        </script>
     </body>
 </html>
