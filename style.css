@@ -1,3 +1,9 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
 #logo {
     float: left;
     border: 3px solid red;
@@ -60,8 +66,3 @@ a:visited:focus {
     color: #0088FF;
   }
 
-@media max-width: 400px {
-    body {
-        background-color: purple;
-    }
-}
