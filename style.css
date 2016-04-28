@@ -60,3 +60,8 @@ a:visited:focus {
     color: #0088FF;
   }
 
+@media max-width: 400px {
+    body {
+        background-color: purple;
+    }
+}
