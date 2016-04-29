@@ -66,3 +66,5 @@ a:visited:focus {
     color: #0088FF;
   }
 
+/*This adds padding to links so that you do not have to click directly on the link to select it.*/
+a {padding: 5px;}
